@@ -1,0 +1,13 @@
+:root {
+  --bg-main: #FFF7ED;
+  --text-dark: #4A2E1F;
+  --text-secondary: #70594A;
+  --radius: 20px;
+  --transition: 0.2s ease;
+  --container-width: 1200px;
+}
+
+body {
+  background: var(--bg-main);
+  font-family: "Inter", sans-serif;
+}
