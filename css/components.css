@@ -104,9 +104,9 @@ nav.nav {
 
 .burger span {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: white;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: 0.3s;
 }
 
@@ -137,15 +137,14 @@ nav.nav {
 
 .mobile_menu {
     position: absolute;
-    left: auto;
-    right: 20px;
+    left: 120px;
+    top: 90px;
     background: black;
     padding: 20px 25px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -185,7 +184,7 @@ nav.nav {
 }
 
 .hero {
-    background-image: url(./assets/img/background.png);
+    background-image: url(../assets/img/background.png);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -571,65 +570,9 @@ nav.nav {
 }
 
 
-@media (max-width: 992px) {
-
-    .header__inner {
-        padding: 0 15px;
-    }
-
-    .header_ul {
-        gap: 25px;
-    }
-
-    .button {
-        height: 48px;
-        width: 160px;
-        font-size: 16px;
-    }
-
-    .button_hero {
-        font-size: 14px;
-
-    }
-
-    .hero__content {
-        padding: 160px 0 200px;
-    }
-
-    .hero__content h1 {
-        font-size: 38px;
-    }
-
-    .about {
-        gap: 80px;
-    }
-
-    .about img {
-        width: 40%;
-    }
-
-    .choice_container {
-        gap: 20px;
-    }
-
-    .choice_card img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .choice_title {
-        font-size: 20px;
-    }
-
-    .choice_subtitle {
-        font-size: 16px;
-    }
-
-}
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 992px),
+(max-width: 768px),
+(max-width: 1024px) {
 
     /* HEADER */
     .header_ul {
@@ -787,6 +730,7 @@ nav.nav {
     .promo_title {
         font-size: 45px;
         margin-bottom: 40px;
+        margin-top: 80px;
     }
 
     .promo_container {
@@ -868,7 +812,8 @@ nav.nav {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 480px),
+(max-width: 540px) {
 
     .header__inner img {
         width: 16px;
@@ -1015,6 +960,7 @@ nav.nav {
         justify-content: space-between;
         gap: 20px;
         position: relative;
+        margin-bottom: 80px;
     }
 
     .gallery_cards {
@@ -1048,7 +994,7 @@ nav.nav {
     .button_gallery {
         width: 100%;
         height: 50px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .gallery_arrow {
@@ -1066,8 +1012,12 @@ nav.nav {
     }
 
     .promo_container {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
 
+    }
+
+    .promo__grid {
+        flex-direction: column
     }
 
     .promo__item p {
@@ -1144,4 +1094,79 @@ nav.nav {
         gap: 63px;
         padding: 40px 20px;
     }
+}
+
+@media (max-width: 390px) {
+
+    .header_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header_logo svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header_left {
+        gap: 5px;
+    }
+
+    .header_ender {
+        gap: 8px;
+    }
+
+    .header_ender img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .button {
+        height: 34px;
+        width: 133px;
+        font-size: 13px;
+        letter-spacing: -6%;
+        font-weight: 500;
+    }
+
+    .button_hero {
+        height: 34px;
+        width: 280px;
+    }
+
+    .mobile_menu.active {
+        left: 90px;
+        top: 60px;
+    }
+
+    .footer_nav {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .gallery_arrow img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .button_gallery {
+        width: 130px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 344px) {
+
+    .header__inner {
+        gap: 4px;
+    }
+
+    .button {
+        height: 34px;
+        width: 120px;
+        font-size: 13px;
+        letter-spacing: -6%;
+        font-weight: 500;
+    }
+
 }
